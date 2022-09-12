@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+    <head>
+        <title>CIT Lego Club - Membership</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+        <link rel="icon" href="images/favicon.png" type="image/png">     
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Conor Pasley">
+        <meta name="description" content="This is the membership page for The CIT Lego Club. Use this form to sign up to the club">
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="main-nav">
+                <a href="index.html"><img class="logo" src="images/lego-logo.png" alt="logo"></a>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="events.html" >Events</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="banner-container"></div>
+            <div class="welcome-title">
+                <h1 >Become a Member</h1>
+            </div>
+        
+            <section id="membership-container">
+                <div id="membership_form">
+                    <h2>Sign up to The Lego Society</h2>
+                    <div id="membership_info">
+                        <p>If you would like to sign up to our Lego Society please fill out this form below. You will recieve an email back in the next few days from one of our committee members</p>
+                    </div>
+                    <form method="post" action="https://webdevcit.com/displayvalues.php">
+                        <label class="label" for="fname" >First Name:</label>
+                        <input required type="text" class="input_box" id="fname" name="fname" value="" placeholder="Enter first name"><br><br>
+
+                        <label class="label" for="surname" >Surname:</label>
+                        <input required type="text" class="input_box" id="surname" name="surname" value="" placeholder="Enter surname"><br><br>
+
+                        <label class="label" for="email" >Email Address:</label>
+                        <input required type="text" class="input_box" id="email" name="email" value="" placeholder="Enter email address"><br><br>
+
+                        <label class="label" for="number">Contact Number:</label>
+                        <input type="text" id="number" class="input_box" name="number" value="" placeholder="Enter contact number"><br><br>
+
+                        <label class="label" >Preferred Contact Method:</label>
+                        <select required class="input_box" name="contactby" >
+                            <option value="">Please select...</option>
+                            <option value="email">Email</option>
+                            <option value="zoom">Zoom</option>
+                            <option value="skype">Skype</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="viper">Viber</option>
+                        </select><br><br>
+
+                        <label class="label" for="dateofbirth">Date of Birth:</label>
+                        <input required class="input_box" type="date" id="dateofbirth" name="dateofbirth"><br><br>
+
+                        <p>Level of Experience:</p>
+                        <input type="radio" class="experience" id="novice" name="experience" value="novice">
+                        <label for="novice">Novice</label>
+
+                        <input type="radio" class="experience" id="competent" name="experience" value="competent">
+                        <label   for="competent">Competent</label>
+
+                        <input  type="radio" class="experience" id="expert" name="experience" value="expert">
+                        <label  for="expert">Expert</label><br><br>
+
+                        <button type="submit" >Submit</button>
+                        <button  type="reset">Cancel</button>
+                    </form>
+                </div>
+            </section>
+        
+            <footer>
+                <div>
+                    <a href="https://www.facebook.com/CITsocieties/?ref=page_internal" target="_blank"><img class="social_icons fb" src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/citsocieties/?hl=en" target="_blank" ><img class="social_icons insta" src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/citsocieties?lang=en" target="_blank"><img class="social_icons tw" src="images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCGr3CbCQPIIfykwHfNI65BA" target="_blank"><img class="social_icons yt" src="images/youtube.png" alt="Youtube"></a>
+                </div>
+                
+                <div class="footer_left">
+                    <p>&copy;CITLEGOCLUB 2020<br>Developed by: <a href="mailto:conor.pasley@mycit.ie">Conor Pasley</a></p>
+                </div>
+    
+                <div class="footer_right">
+                    <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a><br>from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                </div>
+            </footer> 
+        </div>
+    </body>
+</html>
